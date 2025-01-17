@@ -3,9 +3,6 @@
 import React, { useState } from "react";
 import { FaRegUserCircle } from "react-icons/fa";
 import { CiShoppingCart, CiSearch } from "react-icons/ci";
-import { FaShoppingCart } from "react-icons/fa";
-import Link from "next/link";
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

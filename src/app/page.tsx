@@ -1,5 +1,5 @@
 import Image from "next/image";
-import path from "path";
+
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 export default function Home() {
@@ -313,9 +313,12 @@ export default function Home() {
       {/* 1st Box (Half-width) */}
       <div className='col-span-1 bg-gradient-to-r from-gray-100 to-gray-100 h-64 flex flex-col rounded-lg overflow-hidden'>
         <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-          <img 
+          <Image
             src="/glassman.png"
             alt="Casual"
+
+            width={250}
+            height={200}
             className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" 
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -326,9 +329,11 @@ export default function Home() {
       {/* 2nd Box (Double-width) */}
       <div className='col-span-2 bg-gradient-to-r from-gray-100 to-gray-100 h-32 flex flex-col rounded-lg overflow-hidden'>
         <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-          <img 
+          <Image
             src="/glassman2.png"
             alt="Formal"
+            width={250}
+            height={200}
             className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" 
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -339,9 +344,11 @@ export default function Home() {
       {/* 3rd Box (Double-width) */}
       <div className='col-span-2 bg-gradient-to-r from-gray-100 to-gray-100 h-32 flex flex-col rounded-lg overflow-hidden'>
         <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-6 pt-40">
-          <img 
+          <Image
             src="/girl2.png"
             alt="Party"
+            width={250}
+            height={200}
             className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" 
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -352,9 +359,11 @@ export default function Home() {
       {/* 4th Box (Half-width) */}
       <div className='col-span-1 bg-gradient-to-r from-gray-100 to-gray-100 h-64 flex flex-col rounded-lg overflow-hidden'>
         <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-          <img 
+          <Image
             src="/gym.png"
             alt="Gyms"
+            width={250}
+            height={200}
             className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" 
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
@@ -401,7 +410,7 @@ export default function Home() {
               {/* Client Comment */}
               <p className="text-gray-600 text-base">
                
-                "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”"
+                I am blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I have bought has exceeded my expectations.
               </p>
             </div>
           </div>
@@ -428,7 +437,7 @@ export default function Home() {
               {/* Client Comment */}
               <p className="text-gray-600 text-base">
                 
-                "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+                Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.
               </p>
             </div>
           </div>
@@ -455,7 +464,7 @@ export default function Home() {
               {/* Client Comment */}
               <p className="text-gray-600 text-base">
               
-"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.
               </p>
             </div>
           </div>

@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { CiTwitter, CiLinkedin } from 'react-icons/ci'; // Import the required icons
+import { FaInstagram } from 'react-icons/fa'; // Import the required icons
 import React from 'react';
-import { CiTwitter } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
 
 export default function Home() {
   return (
@@ -22,10 +21,10 @@ export default function Home() {
         <div className="flex gap-8 items-center">
           <div className="w-1/2">
             <p className="text-lg text-gray-700">
-              Launched in 2015, Exclusive is South Asia's premier online shopping marketplace with an active presence in Bangladesh. Supported by a wide range of tailored marketing, data, and service solutions, Exclusive has 10,500 sellers and 300 brands and serves 3 million customers across the region.
+             
             </p>
             <p className="text-lg text-gray-700 mt-4">
-              Exclusive has more than 1 million products to offer, growing at a very fast rate. Exclusive offers a diverse assortment in categories ranging from consumer products.
+            Exclusive was launched in 2015 and is South Asia premier online shopping marketplace, with a strong presence in Bangladesh. Offering a comprehensive suite of tailored marketing, data, and service solutions, Exclusive connects over 10,500 sellers and 300 brands with 3 million customers across the region.
             </p>
           </div>
           <div className="w-1/2">
@@ -92,35 +91,18 @@ export default function Home() {
       <div className="py-12">
         <h2 className="text-4xl font-bold text-left mb-8">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              name: 'Tom Cruise',
-              role: 'Founder & Chairman',
-              img: 'https://s3-alpha-sig.figma.com/img/0881/49fd/5afc043392ee3cbb529f429b3e2098d3?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D1dLk2K~Gk5MKs~1B6CH~xHrU5MnkxLaMGTT2x1ED6O9jl89dUwdzY29qipifa06cTwZ01weZQxszfTsoLPT7LEStGI-U6gsF3ksy6LH0CFMiX3yg10NeimY8ad~DhL6kNRKuJktH4voTofLjWvsfG82JZVH3nA1tiMscnYKvsTNpsvpdNmJqsMiuZzBj1qPoOj-of-NvjWwJrcZ3UaWb8qJ6PEIL8d49lAvP1poKM3v3cSXiw6V~7YhZJQm6gWFXB78iCkbYPYEYW0WXqBD8Y8CYDB9qtS7V8cnU~d5t6ZiXMK6iu3yQzt3bMifuzxZYffJpoSIoI87broNQ8nN9w__',
-            },
-            {
-              name: 'Emma Watson',
-              role: 'Managing Director',
-              img: 'https://s3-alpha-sig.figma.com/img/8438/eab9/a2fe88af0272adecd83422d0cb7e20d7?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EgRepsaB1MI1UPw33R~uXfLZUG2vLJDlLY2V7XVT53HSiATlQvbYh6iWhXfB-m2spQGWmga-AANuYZzzZmz6UX9mEF1~KK95j1kmCi~PPWOH59Nk0o6VQm5iORGvq8BK9SvQo1QTnFy1fDVVRmmrHgnqtv3uujmoVYXGCF7fBSsKqA6PiW-5uD~oFJkFnrUcvd0l2r7QYHVtLG0HcX9V2FNrtVwDaP8aIqSEdkmJhqwa5ePrFA2IGrH48ZTFjNmFyDcRi7QCGUEqw3CQx-KKYi1ugd9PQjbAktID0fRnUETpz5~7fYagCincdjwC0YBTzq5JjnfBauZoZONz5rhDEA__',
-            },
-            {
-              name: 'Will Smith',
-              role: 'Product Designer',
-              img: 'https://s3-alpha-sig.figma.com/img/ede4/8f2b/5df8103b281240ce5bafe5dd7d215ab8?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TnmOrS4kuuUVejl3FM1OYEQZe1YCUDr2lgzUJiq2upj6RjxvRwM9pA2zIt23QYtviQ2GhI9~eaCIoWZPBlZDP9Bt-qJJX7WJnsintHB4z3Brwv4YzozmmmlnUoUr04BLny9S-c~egZaHHkv-GrMJoAvmr9NHLKGrgyMlDaTblM3r32rjQAqf79~qe0pdsqlHqp7jiHus1tc4J5gVaDm8JwCFpGZPLaKnnqyLY8APIbPbXT2xqe85vgie-k~HR7i4yhyJzkEYbY-UPDdo1ewPgEkaNNjM3tKe0wL8nPZHZTmWzMdcD-xwSfAajokkuDyR8NE28nlSWUSVvomDWSALzA__',
-            },
+          {[ 
+            { name: 'Tom Cruise', role: 'Founder & Chairman', img: 'https://s3-alpha-sig.figma.com/img/0881/49fd/5afc043392ee3cbb529f429b3e2098d3' },
+            { name: 'Emma Watson', role: 'Managing Director', img: 'https://s3-alpha-sig.figma.com/img/8438/eab9/a2fe88af0272adecd83422d0cb7e20d7' },
+            { name: 'Will Smith', role: 'Product Designer', img: 'https://s3-alpha-sig.figma.com/img/ede4/8f2b/5df8103b281240ce5bafe5dd7d215ab8' }
           ].map((member, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg overflow-hidden"
-              style={{ width: "150px", height: "350px", margin: "auto" }}
-            >
-              <div
-                className="relative"
-                style={{ height: "300px", overflow: "hidden" }}
-              >
-                <img
+            <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden" style={{ width: "150px", height: "350px", margin: "auto" }}>
+              <div className="relative" style={{ height: "300px", overflow: "hidden" }}>
+                <Image
                   src={member.img}
                   alt={member.name}
+                  width={600}
+                  height={400}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -129,13 +111,13 @@ export default function Home() {
                 <p className="text-gray-600">{member.role}</p>
                 <div className="mt-4 flex justify-center gap-4">
                   <a href="#" className="text-blue-500 hover:text-blue-700">
-                    <i className="<CiTwitter />"></i>
+                    <CiTwitter size={24} />
                   </a>
                   <a href="#" className="text-blue-500 hover:text-blue-700">
-                    <i className="<FaInstagram />"></i>
+                    <FaInstagram size={24} />
                   </a>
                   <a href="#" className="text-blue-500 hover:text-blue-700">
-                    <i className="<CiLinkedin />"></i>
+                    <CiLinkedin size={24} />
                   </a>
                 </div>
               </div>
@@ -146,3 +128,4 @@ export default function Home() {
     </div>
   );
 }
+
